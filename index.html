@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Outbreak Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Disease Outbreak Prediction</h2>
+        <p>Enter details to check the risk of a disease outbreak in your area.</p>
+
+        <label for="location">Select Location:</label>
+        <select id="location">
+            <option value="high-risk">High-Risk Area</option>
+            <option value="moderate-risk">Moderate-Risk Area</option>
+            <option value="low-risk">Low-Risk Area</option>
+        </select>
+
+        <label for="symptoms">Select Symptoms:</label>
+        <select id="symptoms">
+            <option value="fever-cough">Fever & Cough</option>
+            <option value="body-pain">Body Pain</option>
+            <option value="cold-flu">Cold & Flu</option>
+            <option value="healthy">No Symptoms</option>
+        </select>
+
+        <button onclick="predictOutbreak()">Check Outbreak Risk</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
